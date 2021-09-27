@@ -1,0 +1,310 @@
+@font-face 
+{
+    font-family: 'rubikregular';
+    src: url('rubik-regular-webfont.woff2') format('woff2'),
+         url('rubik-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'rubikbold';
+    src: url('rubik-bold-webfont.woff2') format('woff2'),
+         url('rubik-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'rubikitalic';
+    src: url('rubik-italic-webfont.woff2') format('woff2'),
+         url('rubik-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1
+{
+    color: #191970;/*Bleu de minuit*/
+    font-family: rubikregular;
+    text-align: center;
+    font-size: 70px;
+}
+
+h2
+{
+    color: #191970;/*Bleu de minuit*/
+    font-family: rubikregular;
+    text-align: center;
+    position: relative;
+    top: -30px;
+}
+
+h3
+{
+    color: #191970;/*Bleu de minuit*//*modification de la couleur par rapport aux autres pages*/
+    font-family: rubikregular;
+    text-align: center;
+}
+
+h4
+{
+    color: #191970;/*Bleu de minuit*/
+    font-family: rubikregular;
+    position: relative;
+    top: 30px;
+}
+
+h5
+{
+    color: #191970;/*Bleu de minuit*/
+    font-family: rubikregular;
+    font-weight: bold;
+    font-size: 15px;
+    position:relative;
+    top: 10px;
+}   
+
+h6
+{
+    color: #87CEEB;/*bleu azur*/
+    font-family: rubikregular;
+    text-align: justify;
+    font size: 10px;
+    position:relative;
+    top: 10px;
+}
+
+.boutonreserver/*Création du bouton "réserver"*/
+{
+    font-family: rubikregular;
+    font-weight: bold;
+    padding: 10px 30px; 
+    background: linear-gradient(#ffece1, white, #ffece1);/*dégradé de couleur sur le bouton*/
+    background: grey,/*666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666*/
+    border-radius: 30px;/*border-radius" permet d'arrondir les angles du bouton*/
+    -webkit-border-radius: 11px;/*Permet de s'assurer que le code sera bien pris en compte par Chrome, Safari et Android*/
+    -moz-border-radius: 11px;/*Permet de s'assurer que le code sera bien pris en compte par Mozilla*/
+    border: 2px solid white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .3),
+                0 3px 5px rgba(0, 0, 0, .2),
+                0 5px 10px rgba(0, 0, 0, .2),
+                0 20px 20px rgba(0, 0, 0, .15);
+    color: #318ce7;/*Bleu roi (France)*/;/*couleur des lettres avant le survol*/
+    transition: all 0.3s ease-out 0s;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    position:relative;
+    top:-120px;
+    left:85%;
+}
+
+.boutonreserver:hover,
+.boutonreserver:focus
+{
+    background: linear-gradient(white, #ffece1, white);/*dégradé de couleur sur le bouton*/
+    color:#318ce7;/*couleur des lettres en cas de survol*/
+    border: 2px solid white;
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, 3.) inset, 
+                0 -1px 0 hsl(210, 100%, 42%) inset, 
+                0 -2px 0 hsl(210, 100%, 48%) inset, 
+                0 -3px 0 hsl(210, 100%, 54%) inset, 
+                0 -4px 0 hsl(210, 100%, 60%) inset, 
+                0 -5px 0 hsl(210, 100%, 70%) inset; 
+    padding: 12px 35px 17px 35px;/*taille de l'aggrandissement du bouton en cas de survol*/
+  
+}
+
+section
+{
+    display:flex;
+    flex-direction: column;
+}
+
+article
+{
+    color: #87CEEB;/*bleu azur*/;
+    background: #000080;/*bleu navy*/;
+    font-family: rubikregular;
+    text-align: justify;
+    font-size: 100%;
+    font:bold;
+}
+
+legend
+{
+    color: #87CEEB;/*bleu azur*/;
+    font-family: rubikregular;
+    text-align: justify;
+    font-size: 25px;
+    font:bold;
+}
+
+input:invalid,
+input:required
+{
+  border-color : #87CEEB;/*bleu azur*/;
+  border-style: inset;
+}
+
+:focus
+/*quand on survole la zone d'écriture du formulaire*/
+{
+    background-color:#87CEEB;/*bleu azur*/;;
+}
+
+aside
+{
+    display:flex;
+}
+
+#nom, #prénom, #email
+{
+    height: 15px;
+    width: 200px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .3),
+                0 2px 4px rgba(0, 0, 0, .2),
+                0 4px 5px rgba(0, 0, 0, .2),
+                0 10px 10px rgba(0, 0, 0, .15);
+}
+
+#message
+{
+    height: 250px;
+    width: 750px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .3),
+                0 3px 5px rgba(0, 0, 0, .2),
+                0 5px 10px rgba(0, 0, 0, .2),
+                0 20px 20px rgba(0, 0, 0, .15);
+}
+
+
+mark
+{
+    color: #318ce7;/*Bleu roi (France)*/
+    font-family: rubikitalic;
+}
+
+a
+{
+    color: #87CEEB;/*bleu azur*/
+    font-family: rubikregular;
+    text-align: justify;
+}
+
+p
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+span
+{
+    color: #191970;/*Bleu de minuit*/
+    font-weight: bold;
+    font-family: rubikregular;
+}
+
+span:hover
+{
+    /*coloration de l'onglet en cas de survol*/
+    color: #318ce7;/*Bleu roi (France)*/
+}
+
+ul
+{
+    display: flex;/*affichage de la liste en barre*/
+    justify-content: space-around;/*espace dans la barre entre les onglets*/
+    list-style-type: none;
+    padding: 0;
+    background: linear-gradient(white, grey);/*dégradé de couleur sur l'onglet*/
+    background: grey,
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .3),
+                0 3px 5px rgba(0, 0, 0, .2),
+                0 5px 10px rgba(0, 0, 0, .2),
+                0 20px 20px rgba(0, 0, 0, .15);
+}
+
+ul li
+{
+    display: table-cell;
+}
+
+ul li a
+{
+    display: block;
+    text-align: center;
+    color: rgba(0, 0, 0, .7); 
+    text-decoration: none;
+    padding: 8px 8px 8px 8px;
+    text-shadow: 0 1px 0 rgba(49, 140, 231, .0);
+    transition: all .3s .1s;/*durée entre le survol et l'extension de l'onglet*/
+}
+
+ul li a:hover, 
+ul li a:focus{
+    background: color: red;/* 666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666-666666666666*/
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .0) inset, 
+                0 -1px 0 hsl(210, 100%, 42%) inset, 
+                0 -2px 0 hsl(210, 100%, 48%) inset, 
+                0 -3px 0 hsl(210, 100%, 54%) inset, 
+                0 -4px 0 hsl(210, 100%, 60%) inset, 
+                0 -5px 0 hsl(210, 100%, 70%) inset; 
+    padding: 8px 25px 17px 25px;
+    transition: padding .3s;
+    transition: all .3s 0s;
+} 
+
+ul li:first-child a
+{
+    border-radius: 3px 0 0 3px;
+}
+ul li:last-child a
+{
+    border-radius: 0 3px 3px 0;
+}
+
+#Banniere_image
+{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    position: relative;
+
+}
+
+#Politesse
+{
+    position: relative;
+    top:30px;
+}
+
+#Coordonnées, #Horaires
+{
+    color: #87CEEB;/*bleu azur*/
+    font-family: rubikregular;
+    text-align: justify;
+}
+
+footer
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#Plan_d_acces
+{
+    border="0"
+}
+
+#Copyright
+{
+display: flex;
+align-items: center;
+flex-direction: column; 
+}
